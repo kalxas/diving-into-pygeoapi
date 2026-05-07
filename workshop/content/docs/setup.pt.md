@@ -29,6 +29,8 @@ Dito isto, sinta-se à vontade para usar o que funciona melhor para si :)
 
 A maioria dos exercícios focar-se-á na edição da [configuração](https://docs.pygeoapi.io/en/latest/configuration.html) da pygeoapi, que está no formato [YAML](https://yaml.org). Se não estiver familiarizado com YAML, vale a pena ler um [tutorial](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started) para se familiarizar com a sintaxe e a indentação do YAML.
 
+## Docker
+
 O requisito principal para a formação é instalar o Docker e/ou o Docker Compose no seu sistema.
 Aconselhamos vivamente a instalação do Docker antes do início da workshop.
 
@@ -36,8 +38,6 @@ Embora sejam possíveis vários cenários de instalação personalizada (consult
 
 Os Exercícios da Workshop também serão baseados no Docker, pelo que uma instalação personalizada seria, no mínimo, 'desafiadora'.
 A boa notícia é que apenas uma única instalação (Docker) é necessária! As imagens Docker utilizadas nesta workshop contêm a versão mais recente da pygeoapi e todas as suas dependências e serviços externos (ex: PostGIS).
-
-## Sobre o Docker
 
 O Docker está disponível desde 2013 e é fornecido como uma opção de implementação em inúmeros projetos de software FOSS e da OSGeo. Dada a era atual da computação, é provável que já tenha ouvido falar do Docker e de *contentorização*. Ou, talvez, já esteja familiarizado e, esperamos, já a utilizar o Docker.
 Se não for o caso, existe uma abundância de materiais introdutórios que podem ser encontrados online, como este [tutorial da IBM](https://www.ibm.com/topics/docker).
@@ -48,7 +48,7 @@ O [Docker Compose](https://docs.docker.com/compose) é um complemento do Docker 
 
 Num patamar superior, existem orquestradores Docker ainda mais sofisticados, como o [Rancher](https://rancher.com/products/rancher) e o [Kubernetes](https://kubernetes.io), mas para esta workshop, o Docker e o Docker Compose são tudo o que precisamos.
 
-## Instalação
+### Instalação
 
 A instalação do Docker progrediu muito ao longo dos anos. Esta é a única parte da workshop que depende do sistema/SO que está a utilizar (ex: Windows, Mac ou Linux). Para cada sistema, o site do Docker fornece instruções de instalação detalhadas. Por favor, siga-as de forma consistente.
 
