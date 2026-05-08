@@ -58,7 +58,6 @@ Let's generate the tiles as the first step using tippecanoe:
         cd workshop/exercises
         docker run -it --rm -v ${pwd}/data:/data emotionalcities/tippecanoe tippecanoe -r1 -pk -pf --output-to-directory=/data/tiles/ --force --maximum-zoom=16 --extend-zooms-if-still-dropping --no-tile-compression /data/hyderabad/greater_hyderabad_municipal_corporation_ward_Boundaries.geojson
         ```
-        </div>
  
 !!! note
     Please note that the tippecanoe tool requires the input file to be in WGS84, and it always outputs tiles in WebMercator.
