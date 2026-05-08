@@ -371,8 +371,7 @@ In this example, the colors of the symbols reflect the value of the `objectid` a
 
 <iframe
   src="https://ogcincubator.github.io/ogcapi-tiles-demo/"
-  style="width:100%; height:800px;"
-></iframe>
+  style="width:100%; height:800px;"></iframe>
 
 !!! tip 
 

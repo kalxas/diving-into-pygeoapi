@@ -367,17 +367,15 @@ Neste exemplo, as cores dos símbolos refletem o valor do atributo `objectid`.
 
 ### OpenLayers
 
-O [OpenLayers](https://openlayers.org) é uma biblioteca JavaScript popular para adicionar mapas interativos a websites. O OpenLayers suporta nativamente a OGC API - Tiles (mapa e vetor). Pode verificar o código para o exemplo abaixo em: <https://ogcincubator.github.io/ogcapi-tiles-demo/>
+[OpenLayers](https://openlayers.org) é uma biblioteca JavaScript popular para adicionar mapas interativos a websites. O OpenLayers suporta nativamente a OGC API - Tiles (mapa e vetor). Pode verificar o código para o exemplo abaixo em: <https://ogcincubator.github.io/ogcapi-tiles-demo/>
 
 <iframe
   src="https://ogcincubator.github.io/ogcapi-tiles-demo/"
-  style="width:100%; height:800px;"
-></iframe>
+  style="width:100%; height:800px;"></iframe>
 
 !!! tip 
 
     Consulte a [documentação oficial do OpenLayers](https://openlayers.org/en/latest/examples/ogc-vector-tiles.html)
-
 
 # Resumo
 
