@@ -15,6 +15,7 @@
         <link rel="canonical" href="https://dive.pygeoapi.io/publishing/ogcapi-features.pt/">
       
       
+      
         <link rel="prev" href="../first.pt/">
       
       
@@ -29,7 +30,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="zensical-0.0.66">
+      <meta name="generator" content="zensical-0.0.73">
     
     
       
@@ -40,7 +41,7 @@
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/classic/main.5da0f285.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/classic/main.94dd801d.min.css">
       
       
 
@@ -75,14 +76,11 @@
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer" aria-label="Navegação"></label>
+    <label class="md-overlay" for="__drawer" aria-hidden="true"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#exercicio-2-dados-vetoriais-via-ogc-api-features" class="md-skip">
-          Ir para o conteúdo
-        </a>
-      
+      <a href="#__skip" class="md-skip">
+        Ir para o conteúdo
+      </a>
     </div>
     <div data-md-component="announce">
       
@@ -100,9 +98,10 @@
   <img src="../../assets/images/pygeoapi-icon-notrans.png" alt="Diving into pygeoapi">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Navegação">
+    <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <span class="md-visually-hidden">Navegação</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -154,9 +153,10 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search" aria-label="Pesquisar">
+        <label class="md-header__button md-icon" for="__search">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <span class="md-visually-hidden">Pesquisar</span>
         </label>
         <div class="md-search" data-md-component="search" role="dialog" aria-label="Pesquisar">
   <button type="button" class="md-search__button">
@@ -341,8 +341,6 @@
     
       
         
-          
-        
       
         
       
@@ -371,9 +369,8 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -386,14 +383,8 @@
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
         
         
           <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
@@ -406,6 +397,31 @@
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
               
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.pt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Index
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
                 
               
                 
@@ -1373,8 +1389,10 @@
             <div class="md-content" data-md-component="content">
               
               <article class="md-content__inner md-typeset">
+                <a id="__skip" tabindex="-1"></a>
                 
                   
+
   
     <a href="https://github.com/geopython/diving-into-pygeoapi/edit/main/workshop/content/docs/publishing/ogcapi-features.pt.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
       
@@ -1629,7 +1647,7 @@ o índice do Elasticsearch tenha sido construído. Pode verificar os registos us
 <h2 id="opcional-pygeoapi-como-um-proxy-wfs">OPCIONAL: pygeoapi como um proxy WFS<a class="headerlink" href="#opcional-pygeoapi-como-um-proxy-wfs" title="Permanent link">&para;</a></h2>
 <p>A pygeoapi também pode funcionar como um serviço de frontend da OGC API - Features para um WFS OGC existente através 
 do fornecedor GDAL/OGR. Esta função de ponte permite-lhe efetivamente publicar um WFS como OGC API - Features.</p>
-<p>Isto é expandido numa secção avançada deste workshop: <a href="../../advanced/bridges/#publishing-wfs-as-ogc-api-features">A pygeoapi como uma Ponte para outros Serviços - secção WFS</a>.</p>
+<p>Isto é expandido numa secção avançada deste workshop: <a href="../../advanced/bridges.pt/#publicar-wfs-como-ogc-api-features">A pygeoapi como uma Ponte para outros Serviços - secção WFS</a>.</p>
 <h2 id="acesso-de-lado-do-cliente">Acesso de lado do cliente<a class="headerlink" href="#acesso-de-lado-do-cliente" title="Permanent link">&para;</a></h2>
 <h3 id="qgis">QGIS<a class="headerlink" href="#qgis" title="Permanent link">&para;</a></h3>
 <p>O QGIS Foi um dos primeiros clientes SIG de Desktop que adicionou suporte para a OGC API - Features. O suporte foi 
@@ -1876,7 +1894,7 @@ de demonstração da pygeoapi.</p>
 <div class="admonition question">
 <p class="admonition-title">Interagir com a OGC API - Features via OWSLib</p>
 <p>Se não tiver o Python instalado, considere executar este exercício num contentor Docker. Veja o 
-<a href="../../setup/#using-docker-for-python-clients">Capítulo de Configuração</a>.</p>
+<a href="../../setup.pt/#usar-o-docker-para-clientes-python">Capítulo de Configuração</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">Linux/Mac</label><label for="__tabbed_15_2">Windows (PowerShell)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1922,7 +1940,7 @@ de demonstração da pygeoapi.</p>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p><div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">owslib.ogcapi.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">Features</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span><span class="w"> </span><span class="nn">owslib.ogcapi.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">Features</span>
 </span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">w</span> <span class="o">=</span> <span class="n">Features</span><span class="p">(</span><span class="s1">'https://demo.pygeoapi.io/master'</span><span class="p">)</span>
 </span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">w</span><span class="o">.</span><span class="n">url</span>
 </span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a><span class="s1">'https://demo.pygeoapi.io/master'</span>
@@ -1949,7 +1967,6 @@ de demonstração da pygeoapi.</p>
 </span><span id="__span-33-25"><a id="__codelineno-33-25" name="__codelineno-33-25" href="#__codelineno-33-25"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lakes_query</span><span class="p">[</span><span class="s1">'features'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'properties'</span><span class="p">]</span>
 </span><span id="__span-33-26"><a id="__codelineno-33-26" name="__codelineno-33-26" href="#__codelineno-33-26"></a><span class="p">{</span><span class="sa">u</span><span class="s1">'scalerank'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="sa">u</span><span class="s1">'name_alt'</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="sa">u</span><span class="s1">'admin'</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="sa">u</span><span class="s1">'featureclass'</span><span class="p">:</span> <span class="sa">u</span><span class="s1">'Lake'</span><span class="p">,</span> <span class="sa">u</span><span class="s1">'id'</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="sa">u</span><span class="s1">'name'</span><span class="p">:</span> <span class="sa">u</span><span class="s1">'Lake Baikal'</span><span class="p">}</span>
 </span></code></pre></div>
-</div></p>
 </div>
 </div>
 </div>
@@ -2016,7 +2033,7 @@ de demonstração da pygeoapi.</p>
 </footer>
       
     </div>
-    <div class="md-dialog" data-md-component="dialog">
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
@@ -2028,10 +2045,10 @@ de demonstração da pygeoapi.</p>
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.action.edit","content.action.view","navigation.top","navigation.tracking.prev_next","navigation.tracking.section","navigation.indexes"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copiado para área de transferência","clipboard.copy":"Copiar para área de transferência","search.result.more.one":"Mais 1 nesta página","search.result.more.other":"Mais # nesta página","search.result.none":"Nenhum resultado encontrado","search.result.one":"1 resultado encontrado","search.result.other":"# resultados encontrados","search.result.placeholder":"Digite para iniciar a busca","search.result.term.missing":"Ausente","select.version":"Selecione a versão"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["content.action.edit","content.action.view","navigation.top","navigation.tracking.prev_next","navigation.tracking.section","navigation.indexes"],"redirect":null,"search":"../../assets/javascripts/workers/search.c47bb847.min.js","tags":null,"translations":{"clipboard.copied":"Copiado para área de transferência","clipboard.copy":"Copiar para área de transferência","clipboard.error":"Could not copy to clipboard","search.result.more.one":"Mais 1 nesta página","search.result.more.other":"Mais # nesta página","search.result.none":"Nenhum resultado encontrado","search.result.one":"1 resultado encontrado","search.result.other":"# resultados encontrados","search.result.placeholder":"Digite para iniciar a busca","search.result.term.missing":"Ausente","select.version":"Selecione a versão"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b7d3f789.min.js"></script>
+      <script src="../../assets/javascripts/bundle.77dd0ce9.min.js"></script>
       
     
   </body>
